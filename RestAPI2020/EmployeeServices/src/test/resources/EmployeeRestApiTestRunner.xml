@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="Employee Resources Test Automation Script" parallel="false">
+
+    <parameter name="OS" value=""/>
+    <parameter name="appType" value=""/>
+
+    <test name = "Employee Resources Test">
+        <classes>
+            <!--            <class name="empserviccalls.TestAllEmp"/>-->
+            <class name="empserviccalls.TestSingleEmployee"/>
+        </classes>
+
+    </test>
+
+</suite>

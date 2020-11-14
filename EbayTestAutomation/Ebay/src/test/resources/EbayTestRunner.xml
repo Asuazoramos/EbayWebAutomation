@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ebay Test Script" parallel="false">
+
+
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="cloudEnvName" value="browserstack"></parameter>
+    <parameter name="url" value="http://Ebay.com"></parameter>
+    <parameter name="os" value="os x"></parameter>
+    <parameter name="os_version" value="catalina"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="81"></parameter>
+    <parameter name="url" value="http://Ebay.com"></parameter>
+
+    <test name="Ebay">
+
+        <classes>
+
+            <class name="EbayTestRunner.EbayTest"/>
+            <class name="EbayTestRunner.EbaySearchBar"/>
+
+        </classes>
+
+    </test>
+
+</suite>
